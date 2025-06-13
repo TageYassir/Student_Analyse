@@ -1,0 +1,80 @@
+/* Global background */
+body {
+  background-color: #001f3f; /* Dark blue */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* Default text color to white for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for centering */
+  flex-direction: column;
+}
+
+/* Button container */
+.btn-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  align-items: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+}
+
+/* Apply this to all buttons using the custom 'btn-action' class from your JSX */
+.btn-action {
+  background-color: #ffeb3b !important; /* Yellow */
+  color: #000000 !important;            /* Black text */
+  padding: 10px 20px;                   /* Adds some padding for better button feel */
+  border: none;                         /* Removes any default border */
+  border-radius: 8px;                   /* Rounded corners for the button */
+  font-size: 1rem;                      /* Adjusts font size for consistency */
+  cursor: pointer;                     /* Changes cursor to pointer on hover */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition */
+  width: 200px;                         /* Fixed width for consistency */
+  text-align: center;                   /* Center text within buttons */
+}
+
+/* Hover state */
+.btn-action:hover {
+  background-color: #fff176 !important; /* Lighter yellow on hover */
+  transform: scale(1.05);               /* Slightly enlarge the button on hover */
+}
+
+/* Focus state (optional) for better accessibility */
+.btn-action:focus {
+  outline: 3px solid #ffeb3b; /* Adds a border on focus for better visibility */
+  outline-offset: 3px;        /* Offsets the focus outline a little bit */
+}
+
+/* Media Query for tablets (portrait and landscape) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Stack content vertically */
+    padding: 10px; /* Add padding on smaller screens */
+  }
+
+  /* Adjust button size */
+  .btn-action {
+    width: 100%; /* Make buttons take full width on smaller screens */
+    font-size: 1.2rem; /* Increase font size for better readability */
+  }
+
+  /* Button container */
+  .btn-container {
+    gap: 15px; /* Reduced space between buttons on smaller screens */
+  }
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+  .btn-action {
+    width: 100%; /* Full width for mobile screens */
+    font-size: 1rem; /* Adjust font size for mobile */
+    padding: 12px 0; /* Larger padding on mobile for easier clicking */
+  }
+
+  /* Adjust spacing between buttons */
+  .btn-container {
+    gap: 10px; /* Reduced gap between buttons */
+  }
+}

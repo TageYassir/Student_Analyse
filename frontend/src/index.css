@@ -1,0 +1,319 @@
+/* ------------------- */
+/* Reset and Base Styles */
+/* ------------------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #001f3f;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* ------------------- */
+/* Layout Containers */
+/* ------------------- */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.content-box {
+  background-color: #012a4a;
+  border: 2px solid #f7d21d;
+  border-radius: 12px;
+  padding: 4rem;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  margin-top: -60px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* ------------------- */
+/* Header Section */
+/* ------------------- */
+.header-section {
+  text-align: center;
+}
+
+.header-section h1 {
+  font-size: 2.5rem;
+  color: #f7d21d;
+  margin-bottom: 0.5rem;
+}
+
+.header-section p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* ------------------- */
+/* File Upload Section */
+/* ------------------- */
+.file-section {
+  text-align: center;
+}
+
+.file-section input[type="file"] {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ffffff11;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-section input[type="file"]:hover {
+  background-color: #ffffff22;
+}
+
+/* ------------------- */
+/* Status Message */
+/* ------------------- */
+.status-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* ------------------- */
+/* Button Section */
+/* ------------------- */
+.button-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.button-section button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7d21d;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 140px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-section button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ------------------- */
+/* Plot Section */
+/* ------------------- */
+.plot-section img {
+  max-width: 100%;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.plot-section h2 {
+  text-align: center;
+  color: #f7d21d;
+  margin-top: 2rem;
+}
+
+/* ------------------- */
+/* Best Hour Prediction Message */
+/* ------------------- */
+.bhp-message {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #d1e7dd;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* ------------------- */
+/* Social Icons */
+/* ------------------- */
+.social-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-section a {
+  color: #f7d21d;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-section a:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+/* ------------------- */
+/* Preview Table Section */
+/* ------------------- */
+.preview-section {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.preview-section h2 {
+  text-align: center;
+  color: #f7d21d;
+  margin-bottom: 1rem;
+}
+
+.preview-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #003366;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-section th,
+.preview-section td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ffffff22;
+  text-align: left;
+  color: white;
+}
+
+.preview-section th {
+  background-color: #012a4a;
+  font-weight: bold;
+}
+
+.preview-section tr:nth-child(even) {
+  background-color: #002b5c;
+}
+
+/* ------------------- */
+/* Fare Prediction Section */
+/* ------------------- */
+.fare-predict-section {
+  background-color: #012a4a;
+  border: 2px solid #f7d21d;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.fare-predict-section h3 {
+  color: #f7d21d;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.fare-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fare-input {
+  width: 200px;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff11;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.fare-input:focus {
+  background-color: #ffffff22;
+  outline: none;
+}
+
+.fare-button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7d21d;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fare-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.prediction-result {
+  font-size: 1.2rem;
+  color: #f7d21d;
+  margin-top: 1rem;
+}
+
+/* ------------------- */
+/* Form Group (Reusable) */
+/* ------------------- */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #f7d21d;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff11;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  background-color: #ffffff22;
+}
+
+/* ------------------- */
+/* Responsive Styles */
+/* ------------------- */
+@media (max-width: 600px) {
+  .button-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
+}
